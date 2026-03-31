@@ -3,6 +3,6 @@ import axios from "axios";
 export const httAxios = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://ali-raza-todo.vercel.app"
+      ? "https://ali-raza-todo-1m9bssehl-muhammad-abdullahs-projects-036c9e90.vercel.app"
       : "http://localhost:3000", // Include http:// for localhost
 });
