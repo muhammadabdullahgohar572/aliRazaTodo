@@ -23,6 +23,8 @@ const CustomNavbar = () => {
       const response = await logout();
       // console.log(response.data);
       context.setUser(undefined); // Clear the user context
+        window.location.href="/pages/login";
+
     } catch (error) {
       console.error("Error during logout:", error);
     }

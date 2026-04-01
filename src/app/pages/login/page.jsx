@@ -40,9 +40,9 @@ const Login = () => {
           draggable: true,
           progress: undefined,
         });
-        window.location.href="/",
+        window.location.href="/";
         context.setUser(response.data.User); 
-        router.push("/");
+       
         // Ensure setUser exists in the context
       } else {
         toast.error("Login failed. Please check your credentials.");
