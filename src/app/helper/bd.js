@@ -8,17 +8,9 @@ export const bdconnection = async () => {
       throw new Error("MONGODB_URL environment variable is not defined.");
     }
 
-    // Check if already connected
-    if (mongoose.connection.readyState >= 1) {
-      console.log("MongoDB is already connected.");
-      return;
-    }
-
-    // Attempt MongoDB connection
+   
     const { connection } = await mongoose.connect(process.env.MONGODB_URL, {
       dbName: "work_manager",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
 
     console.log("==============================================");

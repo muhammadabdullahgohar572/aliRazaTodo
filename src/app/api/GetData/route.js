@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 const { bdconnection } = require("@/app/helper/bd");
 
-bdconnection();
+await bdconnection();
 
 export const GET = async (request) => {
   let userData = [];
