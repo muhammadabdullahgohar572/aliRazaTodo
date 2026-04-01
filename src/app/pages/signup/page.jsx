@@ -41,6 +41,7 @@ const Signup = () => {
         draggable: true,
         progress: undefined,
       });
+      window.location.href="/pages/login";
       router.push("/pages/login");  // Corrected the navigation path
     } catch (error) {
       console.error("Failed to add task:", error);

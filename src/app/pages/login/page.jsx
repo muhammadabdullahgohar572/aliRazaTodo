@@ -40,6 +40,7 @@ const Login = () => {
           draggable: true,
           progress: undefined,
         });
+        window.location.href="/",
         context.setUser(response.data.User); 
         router.push("/");
         // Ensure setUser exists in the context
